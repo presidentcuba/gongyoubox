@@ -194,7 +194,7 @@ a:link {
 					}
 					&:hover {
 						> a {
-							color: #26a457;
+							color: #26a457e6;
 							.icon-down {
 								display: none;
 							}
@@ -919,6 +919,231 @@ a:link {
 							font-size: 22px;
 							color: #2f2f2f;
 							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.blog {
+	background-image: url('../images/blog-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	.container {
+		height: 100%;
+		.blog-box {
+			padding-top: 80px;
+			text-align: center;
+			.blog-slider {
+				.title {
+					font-size: 32px;
+					font-weight: 700;
+					color: #fff;
+					margin-bottom: 15px;
+				}
+				.slider-s {
+					.item {
+						.thread {
+							padding: 15px;
+							background-color: #fff;
+							text-align: left;
+							position: relative;
+							z-index: 1;
+							color: #666;
+							p {
+								margin-bottom: 7px;
+								font-size: 18px;
+								position: relative;
+							}
+							span {
+								display: block;
+								font-size: 14px;
+								position: relative;
+							}
+							&::after {
+								content: '';
+								display: block;
+								position: absolute;
+								z-index: 0;
+								bottom: 0;
+								left: 0;
+								width: 100%;
+								height: 5px;
+								background-color: rgba(38, 164, 87, 0.9);
+								transition: all 0.3s;
+							}
+							&:hover {
+								z-index: 100;
+								p {
+									color: #fff !important;
+									z-index: 1000;
+								}
+								span {
+									color: #fff !important;
+									z-index: 1000;
+								}
+								&::after {
+									height: 100%;
+									z-index: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.content-list {
+	padding: 80px 0px;
+	.container {
+		.content-list-box {
+			.title {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				h5 {
+					color: #151515;
+					font-weight: 700;
+					font-size: 32px;
+				}
+				a {
+					color: #666;
+					font-size: 16px;
+				}
+			}
+			.list-box {
+				padding: 0;
+				li {
+					display: flex;
+					justify-content: space-between;
+					font-size: 22px;
+					color: #666;
+					font-weight: 400;
+					align-items: center;
+					padding: 5px 0px;
+					border-bottom: 1px solid #cdcdcd;
+					list-style: circle;
+					a {
+						font-size: 18px;
+						color: #666;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+.contact {
+	background-color: #f5f5f5;
+	padding: 60px 0px;
+	.container {
+		.content-left {
+			display: flex;
+			.item {
+				flex: 1;
+				.title {
+					font-size: 18px;
+					font-weight: 550;
+					color: #151515;
+					margin-bottom: 15px;
+				}
+				.link {
+					a {
+						padding: 15px;
+						display: inline-block;
+						background-color: #e5e5e5;
+						border-radius: 15px;
+						color: #666;
+						transition: all 0.3s;
+						&:hover {
+							background-color: #333;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.content-right {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			.box {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				.item {
+					.info {
+						h5 {
+							font-size: 36px;
+							color: #26a457;
+							font-weight: 600;
+						}
+						span {
+							color: #666;
+							font-size: 18px;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.footer {
+	background-color: #111;
+
+	.footer-top {
+		padding: 20px 0px;
+		border-bottom: 1px solid #808080;
+		.container {
+			.content {
+				display: flex;
+				justify-content: space-between;
+				.nav-s {
+					display: flex;
+					padding: 0;
+					margin: 0;
+					li {
+						padding: 0px 15px;
+						border-right: 1px solid #808080;
+						list-style: none;
+						&:first-child {
+							padding: 0;
+							padding-right: 15px;
+						}
+						a {
+							color: #808080;
+						}
+					}
+				}
+				.icon {
+					display: flex;
+					img {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+	.footer-bot {
+		padding: 20px 0px;
+		.container {
+			.content {
+				display: flex;
+				.logo {
+					margin-right: 20px;
+				}
+				.info {
+					color: #808080;
+					font-size: 16px;
+					span {
+						display: block;
+						&:last-child {
+							margin-top: 12px;
 						}
 					}
 				}

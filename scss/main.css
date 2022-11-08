@@ -181,7 +181,7 @@ a:link {
                 background-color: #fff;
                 text-align: center; }
           .header .container .header-content .header-menu > li:hover > a {
-            color: #26a457; }
+            color: #26a457e6; }
             .header .container .header-content .header-menu > li:hover > a .icon-down {
               display: none; }
             .header .container .header-content .header-menu > li:hover > a .icon-up {
@@ -736,5 +736,167 @@ a:link {
           font-size: 22px;
           color: #2f2f2f;
           font-weight: 400; }
+
+.blog {
+  background-image: url("../images/blog-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px; }
+  .blog .container {
+    height: 100%; }
+    .blog .container .blog-box {
+      padding-top: 80px;
+      text-align: center; }
+      .blog .container .blog-box .blog-slider .title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px; }
+      .blog .container .blog-box .blog-slider .slider-s .item .thread {
+        padding: 15px;
+        background-color: #fff;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+        color: #666; }
+        .blog .container .blog-box .blog-slider .slider-s .item .thread p {
+          margin-bottom: 7px;
+          font-size: 18px;
+          position: relative; }
+        .blog .container .blog-box .blog-slider .slider-s .item .thread span {
+          display: block;
+          font-size: 14px;
+          position: relative; }
+        .blog .container .blog-box .blog-slider .slider-s .item .thread::after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background-color: rgba(38, 164, 87, 0.9);
+          transition: all 0.3s; }
+        .blog .container .blog-box .blog-slider .slider-s .item .thread:hover {
+          z-index: 100; }
+          .blog .container .blog-box .blog-slider .slider-s .item .thread:hover p {
+            color: #fff !important;
+            z-index: 1000; }
+          .blog .container .blog-box .blog-slider .slider-s .item .thread:hover span {
+            color: #fff !important;
+            z-index: 1000; }
+          .blog .container .blog-box .blog-slider .slider-s .item .thread:hover::after {
+            height: 100%;
+            z-index: 0; }
+
+.content-list {
+  padding: 80px 0px; }
+  .content-list .container .content-list-box .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .content-list .container .content-list-box .title h5 {
+      color: #151515;
+      font-weight: 700;
+      font-size: 32px; }
+    .content-list .container .content-list-box .title a {
+      color: #666;
+      font-size: 16px; }
+  .content-list .container .content-list-box .list-box {
+    padding: 0; }
+    .content-list .container .content-list-box .list-box li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      color: #666;
+      font-weight: 400;
+      align-items: center;
+      padding: 5px 0px;
+      border-bottom: 1px solid #cdcdcd;
+      list-style: circle; }
+      .content-list .container .content-list-box .list-box li a {
+        font-size: 18px;
+        color: #666;
+        font-weight: 400; }
+
+.contact {
+  background-color: #f5f5f5;
+  padding: 60px 0px; }
+  .contact .container .content-left {
+    display: flex; }
+    .contact .container .content-left .item {
+      flex: 1; }
+      .contact .container .content-left .item .title {
+        font-size: 18px;
+        font-weight: 550;
+        color: #151515;
+        margin-bottom: 15px; }
+      .contact .container .content-left .item .link a {
+        padding: 15px;
+        display: inline-block;
+        background-color: #e5e5e5;
+        border-radius: 15px;
+        color: #666;
+        transition: all 0.3s; }
+        .contact .container .content-left .item .link a:hover {
+          background-color: #333;
+          color: #fff; }
+  .contact .container .content-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .contact .container .content-right .box {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .contact .container .content-right .box .item .info h5 {
+        font-size: 36px;
+        color: #26a457;
+        font-weight: 600; }
+      .contact .container .content-right .box .item .info span {
+        color: #666;
+        font-size: 18px;
+        font-weight: 400; }
+
+.footer {
+  background-color: #111; }
+  .footer .footer-top {
+    padding: 20px 0px;
+    border-bottom: 1px solid #808080; }
+    .footer .footer-top .container .content {
+      display: flex;
+      justify-content: space-between; }
+      .footer .footer-top .container .content .nav-s {
+        display: flex;
+        padding: 0;
+        margin: 0; }
+        .footer .footer-top .container .content .nav-s li {
+          padding: 0px 15px;
+          border-right: 1px solid #808080;
+          list-style: none; }
+          .footer .footer-top .container .content .nav-s li:first-child {
+            padding: 0;
+            padding-right: 15px; }
+          .footer .footer-top .container .content .nav-s li a {
+            color: #808080; }
+      .footer .footer-top .container .content .icon {
+        display: flex; }
+        .footer .footer-top .container .content .icon img {
+          margin-left: 10px; }
+  .footer .footer-bot {
+    padding: 20px 0px; }
+    .footer .footer-bot .container .content {
+      display: flex; }
+      .footer .footer-bot .container .content .logo {
+        margin-right: 20px; }
+      .footer .footer-bot .container .content .info {
+        color: #808080;
+        font-size: 16px; }
+        .footer .footer-bot .container .content .info span {
+          display: block; }
+          .footer .footer-bot .container .content .info span:last-child {
+            margin-top: 12px; }
 
 /*# sourceMappingURL=main.css.map */
