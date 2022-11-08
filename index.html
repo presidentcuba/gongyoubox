@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- IMPORT BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    /> -->
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+		<!-- IMPORT CSS -->
+		<link rel="stylesheet" href="scss/main.css" />
+		<link rel="stylesheet" href="scss/owl.carousel.min.css" />
+		<link rel="stylesheet" href="scss/owl.theme.default.min.css" />
+
+		<title>미국에서 한국으로 택배배송 한인택배 | 싼택배</title>
+	</head>
+	<body>
+		<div class="mask-dark" id="maskM"></div>
+		<div class="header">
+			<div class="container">
+				<div class="header-content">
+					<div class="logo">
+						<a href="/" alt="">
+							<img src="images/logo.png" alt="" class="logo-mobile" />
+						</a>
+					</div>
+					<ul class="header-menu">
+						<li>
+							<a href="#">
+								<span>내 공유박스</span>
+								<i class="fas fa-sort-down icon-down"></i>
+								<i class="fas fa-sort-up icon-up"></i>
+							</a>
+
+							<ul class="sub-menu">
+								<li class="sub-nav"><a href="#">서비스 신청</a></li>
+								<li class="sub-nav"><a href="#">보관중인 물건</a></li>
+								<li class="sub-nav"><a href="#">공유물건 관리</a></li>
+								<li class="sub-nav"><a href="#">배송대기함</a></li>
+								<li class="sub-nav"><a href="#">이용내역 조회</a></li>
+								<li class="sub-nav"><a href="#">마이페이지</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>서비스소개</span>
+								<i class="fas fa-sort-down icon-down"></i>
+								<i class="fas fa-sort-up icon-up"></i>
+							</a>
+
+							<ul class="sub-menu">
+								<li class="sub-nav"><a href="#">박스단위보관</a></li>
+								<li class="sub-nav"><a href="#">팔렛단위보관</a></li>
+								<li class="sub-nav"><a href="#">사업자용</a></li>
+								<li class="sub-nav"><a href="#">창고서비스</a></li>
+								<li class="sub-nav"><a href="#">물건 공유 플랫폼</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>공유마켓 </span>
+								<i class="fas fa-sort-down icon-down"></i>
+								<i class="fas fa-sort-up icon-up"></i>
+							</a>
+
+							<ul class="sub-menu">
+								<li class="sub-nav"><a href="#">공유마켓</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span>지원 </span>
+								<i class="fas fa-sort-down icon-down"></i>
+								<i class="fas fa-sort-up icon-up"></i>
+							</a>
+
+							<ul class="sub-menu">
+								<li class="sub-nav"><a href="#">자주묻는 질문</a></li>
+								<li class="sub-nav"><a href="#">문의하기</a></li>
+								<li class="sub-nav"><a href="#">공지/홍보</a></li>
+								<li class="sub-nav"><a href="#">Blog 리뷰</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="header-right">
+						<div class="group-btn">
+							<a href="#" class="join">JOIN US</a>
+							<a href="#" class="login">LOGIN</a>
+						</div>
+						<div class="menu">
+							<div class="icon-menu" onclick="showMenu(1)">
+								<i class="fas fa-bars"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="nav-menu" id="listMenu">
+			<li class="icon-close" onclick="showMenu(2)">
+				<i class="fal fa-times"></i>
+			</li>
+		</ul>
+		<div class="slider">
+			<div class="container">
+				<div class="slider-box">
+					<div class="description">
+						<p>모두의 창고</p>
+						<p>공유박스</p>
+						<span
+							>물건을 보관할 공간이 필요하다면, <br />
+							우리집 창고처럼 쉽게 사용할 수 있는 공유박스를 이용하세요</span
+						>
+						<span class="button-text">박스단위 보관 / 팔렛단위 보관</span>
+					</div>
+					<div class="image">
+						<img src="images/slider_img.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service">
+			<div class="container">
+				<div class="service-box">
+					<div class="list-service">
+						<div class="item">
+							<div class="image">
+								<img src="images/img_1.png" />
+							</div>
+							<div class="thread">
+								<div class="title">
+									창고공간이 필요할 때, <br />
+									빠르고 간단하게 이용하세요
+								</div>
+								<div class="des">
+									<p>
+										창고 서비스를 이용하기 위한 복잡한 절차나 준비가 필요하지 않습니다. 인터넷으로 나에게 적합한
+										보관상품을 확인하고 간단하게 신청할 수 있습니다. 택배 배송을 통해서 간편하게 보내고 받으세요
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="images/img_2.png" />
+							</div>
+							<div class="thread">
+								<div class="title">
+									언제 어디서나 보관중인<br />
+									물건을 확인하세요
+								</div>
+								<div class="des">
+									<p>
+										내 공유박스 메뉴를 통해서 온라인으로 보관중인 물건을 확인하세요. 언제든 보관중인 물건을 확인하고,
+										필요한 물건은 빠르게 찾을 수 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="images/img_3.png" />
+							</div>
+							<div class="thread">
+								<div class="title">
+									부담없이<br />
+									저렴하게 이용하세요
+								</div>
+								<div class="des">
+									<p>
+										사용하지 않는 공간과 기간을 대여할 필요가 없습니다. 보관에 필요한 공간을 박스단위부터 팔렛단위까지
+										필요한 만큼만 선택하여 이용할 수 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="images/img_3.png" />
+							</div>
+							<div class="thread">
+								<div class="title">
+									비즈니스 사업자 이신가요?<br />
+									재고관리와 상품배송을 손쉽게 해결할 수 있습니다.
+								</div>
+								<div class="des">
+									<p>
+										제품을 보관하고 포장/배송하는데 소요되는 시간과 비용을 절약할 수 있습니다. 편리한 온라인 시스템을
+										통해서 재고관리와 상품배송을 처리하세요. 전문적인 물류 시스템이 이미 당신의 비즈니스에
+										구축되었습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="link-page">
+						<a href="#">시작하기 ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-s">
+			<div class="container">
+				<div class="service-s-box">
+					<div class="title">보관 서비스 종류</div>
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="images/service_1.jpg" />
+							</div>
+							<div class="thread">
+								<p>
+									박스단위 보관 <br />
+									6,600원/월
+								</p>
+								<span>의류, 도서, 소품류 보관에 적합</span>
+								<span
+									>규격박스 크기 : (55x36x30cm, 60L) <br />
+									여름 티셔츠 50벌, 겨울 니트 류 10~30벌,<br />
+									신발 10~15켤레, 책 약 30~50권을<br />
+									보관할 수 있는 크기입니다</span
+								>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="images/service_2.jpg" />
+							</div>
+							<div class="thread">
+								<p>
+									박스단위 보관 <br />
+									6,600원/월
+								</p>
+								<span>큰 물건과 많은 물건의 보관에 적합</span>
+								<span
+									>팔렛의 크기 : (110x110x150cm)<br />
+									팔렛위에 크기와 수량에 제약없이 보관<br />
+									이사짐부터 온라인 판매용 상품까지<br />
+									안전하고 경제적으로 보관할 수 있습니다</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="link-page">
+						<a href="#">더 알아보기 ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="luggage">
+			<div class="container">
+				<div class="luggage-box">
+					<div class="content-top">
+						<h5>공유박스 짐보관</h5>
+						<p class="slogan">
+							옷장이 꽉차서 터지려고 하나요? <br />
+							베란다가 짐들로 발디딜 틈이 없나요?
+						</p>
+						<span>짐이 너무 많아서 비좁았다면,</span>
+						<p>
+							당장 쓰지 않는 짐은 공유박스에 맡기세요, 집은 넓어져 쾌적해지고, <br />
+							물건은 안전하게 보관할 수 있습니다.
+						</p>
+					</div>
+					<div class="content-body">
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/lu_1.png" alt="" />
+								</div>
+								<div class="name">
+									집안의 <br />
+									넘쳐나는 물건!
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/lu_2.png" alt="" />
+								</div>
+								<div class="name">
+									인터넷으로 <br />
+									간단히 신청하면
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/lu_3.png" alt="" />
+								</div>
+								<div class="name">
+									전문 시설에서<br />
+									안전하게 보관
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/lu_4.png" alt="" />
+								</div>
+								<div class="name">
+									온라인으로 확인하고<br />
+									필요할 때 바로 찾기
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-bot">
+						<div class="title">물건 보관하기</div>
+						<div class="link-page">
+							<a href="#">더 알아보기 ></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="option">
+			<div class="container">
+				<div class="option-box">
+					<div class="title">
+						<h5>전문적인 창고 서비스가 필요하다면</h5>
+						<span
+							>당신의 시간과 공간을 차지하는 제품보관/ 배송은 공유박스에 맡기세요, <br />
+							고정비용 없이 저렴하게 창고를 사용하고, 온라인을 통해 간단하고 체계적으로 관리할 수 있습니다.</span
+						>
+					</div>
+					<div class="list-option">
+						<div class="option">
+							<div class="name">
+								Pallet 단위로 창고를 <br />
+								이용할 수 있습니다.
+							</div>
+
+							<ul class="des">
+								<li>- 제품 보관을 위해 별도 창고를 대여할 필요가 없어 고정비용이 감소합니다.</li>
+								<li>- 물품 입고 등 긴급한 추가 창고 공간 확보가 용이합니다.</li>
+							</ul>
+						</div>
+						<div class="option">
+							<div class="name">
+								재고 관리를 쉽게 <br />
+								할 수 있습니다.
+							</div>
+
+							<ul class="des">
+								<li>- 공급업체로부터 보관시설로 바로 제품 입고를 시킬 수 있습니다.</li>
+								<li>- 제품 입/출고에 따른 재고 상황을 온라인으로 관리할 수 있습니다.</li>
+							</ul>
+						</div>
+						<div class="option">
+							<div class="name">
+								고객 물품발송을 간편하게 <br />
+								해결할 수 있습니다.
+							</div>
+
+							<ul class="des">
+								<li>- 온라인 시스템으로 택배 발송을 신청하고 결과를 확인할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="warehouse">
+			<div class="container">
+				<div class="service-s-box">
+					<div class="title">
+						<p>보관 서비스 종류</p>
+
+						<span>이용 가격</span>
+					</div>
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="images/w-1.jpg" />
+							</div>
+							<div class="thread">
+								<p>
+									가장 합리적인 <br />
+									팔렛단위 비용으로<br />
+									견적을 받아 보세요~
+								</p>
+								<span></span>
+								<span
+									>1.1 x 1.1 m 팔렛 Size,<br />
+									많은 물품에 경제적인 보관비용 제공</span
+								>
+							</div>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="images/w-2.jpg" />
+							</div>
+							<div class="thread">
+								<p>
+									입고부터, 보관, 출고까지<br />
+									쉽고 간편하게<br />
+									고객배송을 처리하세요
+								</p>
+								<span></span>
+								<span
+									>박스포장 및 발송업무 제공,<br />
+									온라인 재고 / 발송 관리</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="link-page">
+						<a href="#">더 알아보기 ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="back-to-top d-none" id="backToTop">
+			<i class="far fa-angle-up"></i>
+		</div>
+		<div class="question">
+			<div class="container">
+				<div class="luggage-box">
+					<div class="content-top">
+						<h5>더 이상 사용하지 않는 물건이 있다면,</h5>
+
+						<p>
+							공유박스를 통해 필요한 사람들에게 물건을 나눌 수 있습니다.<br />
+							물건은 더욱 유용하게 활용이 되고, 지구는 더 깨끗해 집니다.
+						</p>
+					</div>
+					<div class="content-body">
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/ques-1.png" alt="" />
+								</div>
+								<div class="name">
+									없이 지내도 찾지 않으면<br />
+									공유가 가능한 물건 확신
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/ques-2.png" alt="" />
+								</div>
+								<div class="name">
+									온라인으로 공유하기<br />
+									선택하면 끝!
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/ques-3.png" alt="" />
+								</div>
+								<div class="name">
+									물건으로 공유하고<br />
+									추억으로 기록하고
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-box">
+								<div class="image">
+									<img src="images/ques-4.png" alt="" />
+								</div>
+								<div class="name">
+									공유를 통해 더 적게 만들면<br />
+									지구는 더 깨끗해 집니다.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-bot">
+						<div class="title">물건 공유하기</div>
+						<div class="link-page">
+							<a href="#">더 알아보기 ></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="note">
+			<div class="container">
+				<div class="note-box">
+					<div class="content slider-s">
+						<div id="owl-one" class="owl-carousel owl-theme">
+							<div class="item">
+								<img src="images/sl-1.jpg" />
+							</div>
+							<div class="item">
+								<img src="images/sl-2.jpg" />
+							</div>
+						</div>
+					</div>
+
+					<div class="content list">
+						<div class="title">
+							<h5>공지사항</h5>
+							<a href="#">더보기 ></a>
+						</div>
+						<ul class="list-box">
+							<li>
+								<a href="#">추석연휴 물류 안내</a>
+								<span>2022.09.02</span>
+							</li>
+							<li>
+								<a href="#">추석연휴 물류 안내</a>
+								<span>2022.09.02</span>
+							</li>
+							<li>
+								<a href="#">추석연휴 물류 안내</a>
+								<span>2022.09.02</span>
+							</li>
+							<li>
+								<a href="#">추석연휴 물류 안내</a>
+								<span>2022.09.02</span>
+							</li>
+							<li>
+								<a href="#">추석연휴 물류 안내</a>
+								<span>2022.09.02</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/crollToTop.js"></script>
+		<script src="js/main.js"></script>
+
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script>
+			$('#owl-two').owlCarousel({
+				loop: true,
+				margin: 10,
+				center: true,
+				nav: false,
+				dots: false,
+				responsive: {
+					0: {
+						items: 2,
+					},
+					600: {
+						items: 2,
+					},
+					1000: {
+						items: 2,
+					},
+				},
+			})
+			$('#owl-one').owlCarousel({
+				loop: true,
+				margin: 10,
+				center: false,
+				nav: true,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 1,
+					},
+					1000: {
+						items: 1,
+					},
+				},
+			})
+		</script>
+	</body>
+</html>
